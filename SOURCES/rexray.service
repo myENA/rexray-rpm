@@ -1,0 +1,18 @@
+[Unit]
+Description=REX-Ray - Openly serious about storage
+Documentation=https://rexray.io
+Requires=network-online.target
+Before=docker.service
+After=network-online.target
+
+[Service]
+EnvironmentFile=-/etc/sysconfig/rexray
+Restart=on-failure
+ExecStart=/usr/bin/rexray start
+ExecReload=/bin/kill -HUP $MAINPID
+KillMode=process
+KillSignal=SIGINT
+
+[Install]
+WantedBy=multi-user.target
+WantedBy=docker.service

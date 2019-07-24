@@ -1,0 +1,10 @@
+## REX-Ray environment file.
+## Reference available below.
+## https://rexray.readthedocs.io/en/latest/user-guide/config/#configuration-properties
+## For current settings run: rexray env
+##
+CSI_ENDPOINT=/var/run/rexray/csi.sock
+#S3FS_ACCESSKEY=Access-Key-Here
+#S3FS_SECRETKEY=Secret-Key-Here
+#S3FS_ENDPOINT=https://nsvltn.trustvault.ena.com/
+#S3FS_OPTIONS=url=https://nsvltn.trustvault.ena.com/ allow_other nonempty

@@ -1,0 +1,18 @@
+libstorage:
+  logging:
+    level: info
+  service: s3fs
+  integration:
+    volume:
+      operations:
+        create:
+          default:
+            size: 1024
+s3fs:
+#  accessKey: ACCESS_KEY_HERE
+#  secretKey: SECRET_KEY_HERE
+#  endpoint: https://nsvltn.trustvault.ena.com/
+#  options:
+#    - url=https://nsvltn.trustvault.ena.com/
+#    - allow_other
+#    - nonempty
