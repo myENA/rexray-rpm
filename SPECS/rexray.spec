@@ -10,10 +10,10 @@ Group:          System Environment/Daemons
 License:        Apache License, version 2.0
 URL:            https://www.rexray.io
 
-Source0:		https://dl.bintray.com/%{name}/%{name}/stable/%{version}/%{name}-Linux-x86_64-0.11.3.tar.gz
+Source0:        https://dl.bintray.com/%{name}/%{name}/stable/%{version}/%{name}-Linux-x86_64-%{version}.tar.gz
 Source2:        %{name}.service
 Source3:        %{name}.sysconfig
-Source4:		config.yml
+Source4:        config.yml
 
 BuildRequires:  systemd-units
 
